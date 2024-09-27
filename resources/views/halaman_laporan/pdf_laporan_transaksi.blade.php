@@ -72,12 +72,12 @@
 		<table style="width: 100%; border-collapse: collapse; padding-right: 50px; padding-left: 50px;" class="table-content">
 			<tr>
 				<th>NO</th>
-				<th>OUTLET</th>
+				<th>{{ __('Posisi') }}</th>
 				<th>KD INVOICE</th>
-				<th>PELANGGAN</th>
+				<th>{{ __('Pelanggan') }}</th>
 				<th>TGL BAYAR</th>
 				<th>TOTAL BAYAR</th>
-				<th>PEGAWAI</th>
+				<th>{{ __('Pegawai') }}</th>
 			</tr>
 			@foreach($transaksis as $transaksi)
 			<tr>

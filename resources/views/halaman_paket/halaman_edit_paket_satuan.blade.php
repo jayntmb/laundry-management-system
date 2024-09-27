@@ -6,8 +6,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_paket') }}">Kelola Paket</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_paket') }}">{{ __('Kelola Paket') }}</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/edit_paket_satuan/' . $id) }}">Edit Paket Satuan</a></li>
         </ol>
     </div>
@@ -22,7 +22,7 @@
                         <form class="form-valide" action="{{ url('/update_paket_satuan/' . $id) }}" method="post" name="edit_paket_satuan_form">
                             @csrf
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-kode-barang">Kode Paket <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-kode-barang">Code de l'emballage<span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-kode-barang" name="kd_barang" readonly="readonly" value="{{ $paket_satus->kd_barang }}">

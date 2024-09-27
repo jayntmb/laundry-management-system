@@ -107,7 +107,7 @@
 										</tr>
 										@endif
 										<tr>
-											<th>Metode Pembayaran</th>
+											<th>Mode de paiement</th>
 											<td>:</td>
 											<td class="met_bayar">
 												@if($checkout_kilo != '')

@@ -13,8 +13,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_paket') }}">Kelola Paket</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_paket') }}">{{ __('Kelola Paket') }}</a></li>
         </ol>
     </div>
 </div>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Kode Paket</label>
+                            <label class="col-md-3 col-form-label">Code de l'emballage</label>
                             <div class="col-md-9">
                                 <input type="text" readonly="readonly" class="form-control kd_paket">
                             </div>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Outlet</label>
+                            <label class="col-md-3 col-form-label">{{ __('Posisi') }}</label>
                             <div class="col-md-9">
                                 <input type="text" readonly="readonly" class="form-control outlet_paket">
                             </div>
@@ -127,7 +127,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Outlet</label>
+                            <label class="col-md-3 col-form-label">{{ __('Posisi') }}</label>
                             <div class="col-md-9">
                                 <input type="text" readonly="readonly" class="form-control outlet_barang">
                             </div>
@@ -141,7 +141,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Kelola Paket</h4>
+                    <h4 class="card-title">{{ __('Kelola Paket') }}</h4>
                     <!-- Nav tabs -->
                     <div class="default-tab">
                         <ul class="nav nav-tabs mb-3" role="tablist">
@@ -157,7 +157,7 @@
                                         <div class="card" style="background-color: #f4f3f9;">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between">
-                                                    <h4>Daftar Paket Kiloan</h4>
+                                                    <h4>{{ __('Daftar Paket Kiloan') }}</h4>
                                                     <button type="button" class="btn mb-1 btn-primary font-weight-bold btn-sm tambah_kiloan_btn" data-count="{{ $outlets }}">Tambah Paket <span class="btn-icon-right"><i class="fa fa-plus"></i></span></button>
                                                 </div>
                                                 <div class="table-responsive">
@@ -165,7 +165,7 @@
                                                         <thead style="text-align: center;">
                                                             <tr>
                                                                 <th>No</th>
-                                                                <th>Kode Paket</th>
+                                                                <th>Code de l'emballage</th>
                                                                 <th>Nama Paket</th>
                                                                 <th>Harga</th>
                                                                 <th>Lama Cuci</th>

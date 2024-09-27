@@ -13,7 +13,7 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Laporan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Laporan') }}</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/laporan_transaksi') }}">Laporan Transaksi</a></li>
         </ol>
     </div>
@@ -66,12 +66,12 @@
 		                            <thead style="text-align: center;">
 		                                <tr>
 		                                    <th>No</th>
-		                                    <th>Outlet</th>
+		                                    <th>{{ __('Posisi') }}</th>
 		                                    <th>Kd Invoice</th>
-		                                    <th>Pelanggan</th>
+		                                    <th>{{ __('Pelanggan') }}</th>
 		                                    <th>Tgl Bayar</th>
 		                                    <th>Total Bayar</th>
-		                                    <th>Pegawai</th>
+		                                    <th>{{ __('Pegawai') }}</th>
 		                                </tr>
 		                            </thead>
 		                            <tbody class="isi_tabel">

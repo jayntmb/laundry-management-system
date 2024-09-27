@@ -6,8 +6,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_paket') }}">Kelola Paket</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_paket') }}">{{ __('Kelola Paket') }}</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/tambah_paket_kiloan') }}">Tambah Paket Kiloan</a></li>
         </ol>
     </div>
@@ -22,7 +22,7 @@
                         <form class="form-valide" action="{{ url('/simpan_paket_kiloan') }}" method="post" name="paket_kiloan_baru_form">
                             @csrf
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-kode-paket">Kode Paket <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-kode-paket">Code de l'emballage<span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-kode-paket" name="kd_paket" readonly="readonly" value="{{ $max_code }}">
@@ -76,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-outlet">Outlet <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-outlet">{{ __('Posisi') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <select class="form-control" id="val-outlet" name="id_outlet">

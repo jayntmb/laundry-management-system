@@ -85,7 +85,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Total Pemasukan</h5>
+                        <h5 class="modal-title">{{ __('Total Pemasukan') }}</h5>
                         <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
                         </button>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="text-primary">{{ date('d M Y', strtotime(\App\Transaksi::min('tgl_bayar'))) . ' - ' . date('d M Y', strtotime(\App\Transaksi::max('tgl_bayar')))}}</h4>
-                                <p>Total Pemasukan : <b class="text-dark">Rp. {{ number_format(\App\Struk::sum('harga_bayar'),2,',','.') }}</b></p>
+                                <p>{{ __('Total Pemasukan') }} : <b class="text-dark">Rp. {{ number_format(\App\Struk::sum('harga_bayar'),2,',','.') }}</b></p>
                             </div>
                             <div class="col-md-12">
                                 <hr>
@@ -150,7 +150,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Jumlah Pelanggan</h5>
+                        <h5 class="modal-title">{{ __('Jumlah Pelanggan') }}</h5>
                         <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
                         </button>
                     </div>
@@ -158,7 +158,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="text-primary">{{ date('d M Y', strtotime(\App\Transaksi::min('tgl_pemberian'))) . ' - ' . date('d M Y', strtotime(\App\Transaksi::max('tgl_pemberian')))}}</h4>
-                                <p>Jumlah Pelanggan : <b class="text-dark">{{ \App\Transaksi::all()->count() }}</b></p>
+                                <p>{{ __('Jumlah Pelanggan') }} : <b class="text-dark">{{ \App\Transaksi::all()->count() }}</b></p>
                             </div>
                             <div class="col-md-12" style="margin-top: -15px;">
                                 <hr>
@@ -215,10 +215,10 @@
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-1">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Pegawai</h3>
+                    <h3 class="card-title text-white">{{ __('Pegawai') }}</h3>
                     <div class="d-inline-block">
                         <h2 class="text-white">{{ $jml_pegawai }}</h2>
-                        <p class="text-white mb-0">Jumlah Pegawai</p>
+                        <p class="text-white mb-0">{{ __('Jumlah Pegawai') }}</p>
                     </div>
                     <span class="float-right display-5 opacity-5"><i class="fa fa-user"></i></span>
                 </div>
@@ -227,10 +227,10 @@
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-4">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Pesanan Selesai</h3>
+                    <h3 class="card-title text-white">{{ __('Pesanan Selesai') }}</h3>
                     <div class="d-inline-block">
                         <h2 class="text-white">{{ $jml_selesai }}</h2>
-                        <p class="text-white mb-0">Jumlah Selesai</p>
+                        <p class="text-white mb-0">{{ __('Jumlah Selesai') }}</p>
                     </div>
                     <span class="float-right display-5 opacity-5"><i class="fa fa-list-alt"></i></span>
                 </div>
@@ -239,10 +239,10 @@
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-9">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Pelanggan</h3>
+                    <h3 class="card-title text-white">{{ __('Pelanggan') }}</h3>
                     <div class="d-inline-block">
                         <h2 class="text-white">{{ $jml_pelanggan }}</h2>
-                        <p class="text-white mb-0">Jumlah Pelanggan</p>
+                        <p class="text-white mb-0">{{ __('Jumlah Pelanggan') }}</p>
                     </div>
                     <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
                 </div>
@@ -251,10 +251,10 @@
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-8">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Cabang Outlet</h3>
+                    <h3 class="card-title text-white">{{ __('Cabang Outlet') }}</h3>
                     <div class="d-inline-block">
                         <h2 class="text-white">{{ $jml_outlet }}</h2>
-                        <p class="text-white mb-0">Jumlah Outlet</p>
+                        <p class="text-white mb-0">{{ __('Jumlah Outlet') }}</p>
                     </div>
                     <span class="float-right display-5 opacity-5"><i class="fa fa-building-o"></i></span>
                 </div>
@@ -268,7 +268,7 @@
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-between">
                             <div class="judul">
-                                <h4>Jumlah Pelanggan</h4>
+                                <h4>{{ __('Jumlah Pelanggan') }}</h4>
                             </div>
                             <div class="semua-btn">
                                 <button class="btn btn-sm font-weight-bold text-dark" data-toggle="modal" data-target="#jmlPelangganModal">Semua <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
@@ -284,7 +284,7 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Pengunjung Outlet</h4>
+                    <h4 class="card-title">{{ __('Pengunjung Outlet') }}</h4>
                     <hr>
                     <div class="row">
                         <div class="col-md-12">
@@ -292,8 +292,8 @@
                                 <thead class="text-center">
                                     <tr>
                                         <th>NO</th>
-                                        <th>NAMA</th>
-                                        <th>WAKTU</th>
+                                        <th>{{ __('Nama') }}</th>
+                                        <th>{{ __('WAKTU') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -320,8 +320,8 @@
                     <div class="row">
                         <div class="col-md-12 d-flex justify-content-between">
                             <div class="judul">
-                                <h4>Total Pemasukan</h4>
-                                <p>Total Pemasukan Sejak Awal</p>
+                                <h4>{{ __('Total Pemasukan') }}</h4>
+                                <p>{{ __('Total Pemasukan Sejak Awal') }}</p>
                                 <h3>Rp. {{ number_format(\App\Struk::sum('harga_bayar'),2,',','.') }}</h3>
                             </div>
                             <div class="semua-btn">
@@ -386,18 +386,18 @@
                                 </div>
                                 <table class="table_profil mt-3" style="width: 100%;">
                                     <tr class="align-top">
-                                        <th>Kode Pelanggan</th>
+                                        <th>Code client</th>
                                         <td>:</td>
                                         <td>{{ auth()->user()->kd_pengguna }}</td>
                                     </tr>
                                     <tr class="align-top">
-                                        <th>Nama</th>
+                                        <th>Nom</th>
                                         <td>:</td>
                                         <td class="data_identitas">{{ auth()->user()->name }}</td>
                                         <td class="input_ubah" hidden=""><input required="" type="text" name="ubah_nama_pelanggan" value="{{ auth()->user()->name }}"></td>
                                     </tr>
                                     <tr class="align-top">
-                                        <th>Gender</th>
+                                        <th>Sexe</th>
                                         <td>:</td>
                                         @php
                                         $gender = \App\Pelanggan::select('pelanggans.*')
@@ -406,9 +406,9 @@
                                         @endphp
                                         <td>
                                             @if($gender->jk_pelanggan == 'L')
-                                            Laki-laki
+                                            {{ __('Laki-laki') }}
                                             @else
-                                            Perempuan
+                                            {{ __('Perempuan') }}
                                             @endif
                                         </td>
                                     </tr>
@@ -435,7 +435,7 @@
                                         <td class="input_ubah" hidden=""><input required="" type="text" name="ubah_no_hp_pelanggan" class="number_input" value="{{ $no_hp->no_hp_pelanggan }}"></td>
                                     </tr>
                                     <tr class="align-top">
-                                        <th>Alamat</th>
+                                        <th>{{ __('Alamat') }}</th>
                                         <td>:</td>
                                         @php
                                         $alamat = \App\Pelanggan::select('pelanggans.*')
@@ -481,7 +481,7 @@
                                     <td class="nama_outlet"></td>
                                 </tr>
                                 <tr>
-                                    <th class="alert-top">Hotline</th>
+                                    <th class="alert-top">Téléphone</th>
                                     <td>:</td>
                                     <td class="hotline_outlet"></td>
                                 </tr>
@@ -590,7 +590,7 @@ var myChart = new Chart(ctx, {
             @endforeach
         ],
         datasets: [{
-            label: 'Jumlah Pelanggan (Harian)',
+            label: '{{ __('Jumlah Pelanggan') }} (Harian)',
             data: [
             @foreach($pelanggan_harian->reverse() as $pelanggan)
             @php

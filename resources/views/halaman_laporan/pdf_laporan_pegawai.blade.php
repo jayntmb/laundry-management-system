@@ -83,7 +83,7 @@
 				<td class="text-right" style="padding-top: 50px; padding-right: 50px;">Pratama Laundry<br>Jasa Laundry Terbaik di Indonesia</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 50px; color: #454545; font-weight: bold;">PEGAWAI</td>
+				<td style="padding-left: 50px; color: #454545; font-weight: bold;">{{ __('Pegawai') }}</td>
 				<td style="font-size: 28px; color: #313131; padding-top: 15px; padding-right: 50px;" class="text-right">Invoice</td>
 			</tr>
 			<tr>
@@ -97,10 +97,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 50px; padding-top: -5px;"><b>Posisi: </b>{{ $users->role }}</td>
+				<td style="padding-left: 50px; padding-top: -5px;"><b>{{ __('Posisi') }}: </b>{{ $users->role }}</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 50px; padding-top: -5px;"><b>Nama: </b>{{ $users->name }}</td>
+				<td style="padding-left: 50px; padding-top: -5px;"><b>{{ __('Nama') }}: </b>{{ $users->name }}</td>
 			</tr>
 		</table>
 	</div>
@@ -108,9 +108,9 @@
 		<table style="width: 100%; border-collapse: collapse; padding-right: 50px; padding-left: 50px;" class="table-content">
 			<tr>
 				<th>NO</th>
-				<th>OUTLET</th>
+				<th>{{ __('Posisi') }}</th>
 				<th>KD INVOICE</th>
-				<th>PELANGGAN</th>
+				<th>{{ __('Pelanggan') }}</th>
 				<th>TGL PEMBERIAN</th>
 				<th>KET BAYAR</th>
 				<th>STATUS</th>

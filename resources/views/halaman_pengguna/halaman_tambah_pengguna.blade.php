@@ -6,8 +6,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pengguna') }}">Kelola Pengguna</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pengguna') }}">{{ __('Kelola Pengguna') }}</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/tambah_pengguna') }}">Tambah Pengguna</a></li>
         </ol>
     </div>
@@ -22,7 +22,7 @@
                         <form class="form-valide" action="{{ url('/simpan_pengguna') }}" method="post" enctype="multipart/form-data" name="pengguna_baru_form">
                             @csrf
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-kode-pengguna">Kode Pengguna <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-kode-pengguna">{{ __('Kode Pengguna') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-kode-pengguna" name="kd_pengguna" value="{{ $max_code }}" readonly="readonly">
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-username">Username <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-username">{{ __('Username') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-username" name="username" placeholder="Masukkan username">
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-role">Posisi <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-role">{{ __('Posisi') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <select class="form-control" id="val-role" name="role">
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-outlet">Outlet <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-outlet">{{ __('Posisi') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <select class="form-control" id="val-outlet" name="id_outlet">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label">Foto <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label">{{ __('Foto') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <div class="custom-file">

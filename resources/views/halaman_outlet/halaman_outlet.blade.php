@@ -26,8 +26,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_outlet') }}">Kelola Outlet</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_outlet') }}">{{ __('Kelola Outlet') }}</a></li>
         </ol>
     </div>
 </div>
@@ -49,7 +49,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label" for="val-nama">Hotline</label>
+                            <label class="col-md-3 col-form-label" for="val-nama">Téléphone</label>
                             <div class="col-md-9">
                                 <div class="input-group">
                                     <input type="text" class="form-control hotline_outlet" readonly="readonly">
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-3 col-form-label" for="val-nama">Alamat</label>
+                            <label class="col-md-3 col-form-label" for="val-nama">Adresse</label>
                             <div class="col-md-9">
                                 <textarea class="form-control h-150px alamat_outlet" rows="4" id="comment" readonly="readonly"></textarea>
                             </div>
@@ -95,8 +95,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
-                    	<h4 class="card-title">Daftar Outlet</h4>
-                    	<a href="{{ url('/tambah_outlet') }}" class="btn mb-1 font-weight-bold btn-sm btn-primary">Tambah Outlet <span class="btn-icon-right"><i class="fa fa-plus"></i></span></a>
+                    	<h4 class="card-title">{{ __('Daftar Outlet') }}</h4>
+                    	<a href="{{ url('/tambah_outlet') }}" class="btn mb-1 font-weight-bold btn-sm btn-primary">Ajouter un point de vente <span class="btn-icon-right"><i class="fa fa-plus"></i></span></a>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered zero-configuration">
@@ -104,10 +104,10 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Outlet</th>
-                                    <th>Hotline</th>
+                                    <th>Téléphone</th>
                                     <th>Email</th>
-                                    <th>Alamat</th>
-                                    <th>Aksi</th>
+                                    <th>{{ __('Alamat') }}</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -6,9 +6,9 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pengguna') }}">Kelola Pengguna</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/edit_pengguna/'). $id }}">Edit Pengguna</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pengguna') }}">{{ __('Kelola Pengguna') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/edit_pengguna/'). $id }}">{{ __('Edit Pengguna') }}</a></li>
         </ol>
     </div>
 </div>
@@ -17,33 +17,33 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-5">Edit Pengguna</h4>
+                    <h4 class="card-title mb-5">{{ __('Edit Pengguna') }}</h4>
                     <div class="form-validation">
                         <form class="form-valide" action="{{ url('/update_pengguna/'.$id) }}" method="post" enctype="multipart/form-data" name="edit_pengguna_form">
                             @csrf
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-kode-pengguna">Kode Pengguna <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-kode-pengguna">{{ __('Kode Pengguna') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-kode-pengguna" name="kd_pengguna" value="{{ $penggunas->kd_pengguna }}" readonly="readonly">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-nama">Nama <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-nama">Nom <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-nama" name="nama" placeholder="Masukkan nama" value="{{ $penggunas->name }}">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-username">Username <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-username">{{ __('Username') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-username" name="username" placeholder="Masukkan username" value="{{ $penggunas->username }}">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-role">Posisi <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-role">{{ __('Posisi') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <select class="form-control" id="val-role" name="role">
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label">Foto <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label">{{ __('Posisi') }} <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <div class="custom-file">

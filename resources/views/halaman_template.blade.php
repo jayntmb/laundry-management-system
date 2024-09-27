@@ -77,41 +77,41 @@
         <div class="nk-sidebar">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li class="nav-label">Dashboard</li>
+                    <li class="nav-label">{{ __('Dashboard') }}</li>
                     <li>
                         <a href="{{ url('/dashboard') }}" aria-expanded="false">
-                            <i class="fa fa-tachometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                            <i class="fa fa-tachometer menu-icon"></i><span class="nav-text">{{ __('Dashboard') }}</span>
                         </a>
                     </li>
                     @if(auth()->user()->role == 'admin')
-                    <li class="nav-label">Kelola Data</li>
+                    <li class="nav-label">{{ __('Kelola Data') }}</li>
                     <li class="mega-menu mega-menu-sm">
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-th-large menu-icon"></i><span class="nav-text">Kelola Data</span>
+                            <i class="fa fa-th-large menu-icon"></i><span class="nav-text">{{ __('Kelola Data') }}</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="{{ url('/kelola_pengguna') }}">Kelola Pengguna</a></li>
-                            <li><a href="{{ url('/kelola_paket') }}">Kelola Paket</a></li>
-                            <li><a href="{{ url('/kelola_outlet') }}">Kelola Outlet</a></li>
+                            <li><a href="{{ url('/kelola_pengguna') }}">{{ __('Kelola Pengguna') }}</a></li>
+                            <li><a href="{{ url('/kelola_paket') }}">{{ __('Kelola Paket') }}</a></li>
+                            <li><a href="{{ url('/kelola_outlet') }}">{{ __('Kelola Outlet') }}</a></li>
                         </ul>
                     </li>
                     @endif
                     @if(auth()->user()->role == 'admin' || auth()->user()->role == 'kasir')
-                    <li class="nav-label">Layanan Laundry</li>
+                    <li class="nav-label">{{ __('Layanan Laundry') }}</li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-tasks menu-icon"></i> <span class="nav-text">Layanan Laundry</span>
+                            <i class="fa fa-tasks menu-icon"></i> <span class="nav-text">{{ __('Layanan Laundry') }}</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="{{ url('/registrasi_pelanggan') }}">Registrasi Pelanggan</a></li>
-                            <li><a href="{{ url('/kelola_pelanggan') }}">Kelola Pelanggan</a></li>
+                            <li><a href="{{ url('/registrasi_pelanggan') }}">Enregistrement des clients</a></li>
+                            <li><a href="{{ url('/kelola_pelanggan') }}">Gestion des clients</a></li>
                             <li><a href="{{ url('/kelola_transaksi') }}">Transaksi</a></li>
                         </ul>
                     </li>
-                    <li class="nav-label">Laporan</li>
+                    <li class="nav-label">{{ __('Laporan') }}</li>
                     <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                            <i class="fa fa-file-text menu-icon"></i> <span class="nav-text">Laporan</span>
+                            <i class="fa fa-file-text menu-icon"></i> <span class="nav-text">{{ __('Laporan') }}</span>
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="{{ url('/laporan_pegawai') }}">Laporan Pegawai</a></li>

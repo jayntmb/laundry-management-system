@@ -16,7 +16,7 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Laporan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Laporan') }}</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/laporan_pegawai') }}">Laporan Pegawai</a></li>
         </ol>
     </div>
@@ -56,7 +56,7 @@
 		                        <div class="card-body gradient-9">
 		                            <div class="media">
 		                                <div class="media-body">
-		                                    <h2 class="card-widget__title">Selesai</h2>
+		                                    <h2 class="card-widget__title">Terminer</h2>
 		                                    <h5 class="card-widget__subtitle">Jumlah: {{ $selesai }}</h5>
 		                                </div>
 		                            </div>
@@ -88,10 +88,10 @@
 		                            <thead style="text-align: center;">
 		                                <tr>
 		                                    <th>No</th>
-		                                    <th>Nama</th>
-		                                    <th>Kode Pengguna</th>
+		                                    <th>{{ __('Nama') }}</th>
+		                                    <th>{{ __('Kode Pengguna') }}</th>
 		                                    <th>Posisi</th>
-		                                    <th>Username</th>
+		                                    <th>{{ __('Username') }}</th>
 		                                    <th>Aksi</th>
 		                                </tr>
 		                            </thead>

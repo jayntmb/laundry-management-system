@@ -25,8 +25,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Layanan Laundry</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('/kelola_pelanggan') }}">Kelola Pelanggan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Layanan Laundry') }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('/kelola_pelanggan') }}">Gestion des clients</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/detail_pelanggan_non_member/' . $id) }}">Detail Pelanggan</a></li>
         </ol>
     </div>
@@ -56,9 +56,9 @@
                     				<td style="padding: 5px;" class="align-top">:</td>
                     				<td style="padding: 5px;">
                     					@if($pelanggans->jk_pelanggan == 'L')
-                    					Laki-laki
+                    					{{ __('Laki-laki') }}
                     					@else
-                    					Perempuan
+                    					{{ __('Perempuan') }}
                     					@endif
                     				</td>
                     			</tr>
@@ -73,7 +73,7 @@
                     				<td style="padding: 5px;" class="align-top">{{ $pelanggans->email_pelanggan }}</td>
                     			</tr>
                     			<tr>
-                    				<th style="padding: 5px;" class="text-dark text-left align-top">Alamat</th>
+                    				<th style="padding: 5px;" class="text-dark text-left align-top">Adresse</th>
                     				<td style="padding: 5px;" class="align-top">:</td>
                     			</tr>
                     			<tr>
@@ -88,7 +88,7 @@
                                 <span class="mb-1 text-primary"><i class="fa fa-user-o" aria-hidden="true"></i></span>
                                 <table style="width: 100%; margin: 5px;" class="text-left tabel-identitas">
                                 	<tr>
-                                		<th style="padding: 5px;" class="align-top">Username : </th>
+                                		<th style="padding: 5px;" class="align-top">{{ __('Username') }} : </th>
                                 	</tr>
                                 	<tr>
                                 		<td colspan="2" style="padding: 5px;" class="align-top">{{ $akun_pelanggans->username }}</td>
@@ -115,7 +115,7 @@
                         <div class="col-md-6">
                             <table border="0" class="table_transaksi">
                                 <tr>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <td>:</td>
                                     <td>{{ $transaksis->nama_outlet }}</td>
                                 </tr>
@@ -183,7 +183,7 @@
                                     <td>{{ $transaksis->ket_bayar }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Pegawai</th>
+                                    <th>{{ __('Pegawai') }}</th>
                                     <td>:</td>
                                     <td>{{ $transaksis->nama_pegawai }}</td>
                                 </tr>

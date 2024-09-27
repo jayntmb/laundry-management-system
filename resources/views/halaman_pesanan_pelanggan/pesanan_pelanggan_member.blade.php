@@ -92,7 +92,7 @@
 											<td class="tgl_bayar_proses"></td>
 										</tr>
 										<tr>
-											<th>Metode Pembayaran</th>
+											<th>Mode de paiement</th>
 											<td>:</td>
 											<td class="met_bayar"></td>
 										</tr>
@@ -196,7 +196,7 @@
 		<div class="col-md-12">
 			<div class="row">
                 <div class="col-md-3 text-left">
-                    <h4>Daftar Pesanan</h4>
+                    <h4>Liste des commandes</h4>
                 </div>
                 <div class="col-md-9" style="margin-top: -10px;">
                     <div class="d-flex justify-content-end">
@@ -218,10 +218,10 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Tgl Pemberian</th>
-                                    <th>Pegawai</th>
+                                    <th>{{ __('Pegawai') }}</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -248,11 +248,11 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Tgl Pemberian</th>
                                     <th>Tgl Selesai</th>
-                                    <th>Pegawai</th>
+                                    <th>{{ __('Pegawai') }}</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -280,11 +280,11 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Tgl Pemberian</th>
                                     <th>Tgl Selesai</th>
-                                    <th>Pegawai</th>
+                                    <th>{{ __('Pegawai') }}</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -312,11 +312,11 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Tgl Pemberian</th>
                                     <th>Tgl Selesai</th>
-                                    <th>Pegawai</th>
+                                    <th>{{ __('Pegawai') }}</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>

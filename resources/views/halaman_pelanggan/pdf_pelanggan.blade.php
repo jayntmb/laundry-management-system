@@ -74,7 +74,7 @@
 				<td colspan="2" style="text-align: right; padding-right: 50px; padding-top: -5px; color: #7571f9;">{{ $transaksis->email_outlet }}<br>{{ $transaksis->hotline }}</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 50px; text-align: left; color: #454545; font-weight: bold;">PELANGGAN &nbsp;&nbsp;<span class="badge badge-primary">{{ $transaksis->cek_member }}</span></td>
+				<td style="padding-left: 50px; text-align: left; color: #454545; font-weight: bold;">{{ __('Pelanggan') }} &nbsp;&nbsp;<span class="badge badge-primary">{{ $transaksis->cek_member }}</span></td>
 				<td style="font-size: 28px; color: #313131; padding-top: 10px; padding-right: 50px;" class="text-right">Invoice</td>
 			</tr>
 			<tr>
@@ -85,7 +85,7 @@
 				<td style="padding-right: 50px; text-align: right;"><b style="color: #454545;">TGL PEMBERIAN</b><br>{{ date('d M Y', strtotime($transaksis->tgl_pemberian)) }}</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 50px; line-height: 1.3; text-align: left;" colspan="2"><span style="color: #7571f9;">Username: </span>{{ $pelanggans->username }}<br><span style="color: #7571f9;">Password: </span>{{ $transaksis->password_pelanggan }}</td>
+				<td style="padding-left: 50px; line-height: 1.3; text-align: left;" colspan="2"><span style="color: #7571f9;">{{ __('Username') }}: </span>{{ $pelanggans->username }}<br><span style="color: #7571f9;">Password: </span>{{ $transaksis->password_pelanggan }}</td>
 			</tr>
 		</table>
 	</div>

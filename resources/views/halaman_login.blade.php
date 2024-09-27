@@ -32,7 +32,7 @@
                                 <form method="POST" action="{{ url('/registrasi_awal') }}" class="mt-5 mb-5" name="form_register" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
-                                        <input type="text" name="nama" class="form-control" placeholder="Nama">
+                                        <input type="text" name="nama" class="form-control" placeholder="{{ __('Nama') }}">
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-file">
@@ -41,7 +41,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="username" class="form-control" placeholder="Username">
+                                        <input type="text" name="username" class="form-control" placeholder="{{ __('Username') }}">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" name="password" class="form-control" placeholder="Password">
@@ -64,7 +64,7 @@
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5">
                                 <div class="text-center">
-                                    <h4>Selamat Datang</h4>
+                                    <h4>{{ __('Selamat Datang') }}</h4>
                                     @if($message = Session::get('gagal_login'))
                                     <div class="alert alert-danger alert-dismissible fade show" style="margin-top: 15px; margin-bottom: -20px;">
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>

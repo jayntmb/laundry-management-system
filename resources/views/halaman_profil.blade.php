@@ -73,7 +73,7 @@
 	                			<div class="identitas ml-4">
 	                				<p class="text-dark font-weight-bold ubah_nama_text" style="font-size: 18px;">{{ auth()->user()->name }}</p>
 	                				<input type="text" name="ubah_nama_input" class="ubah_nama_input mb-3" value="{{ auth()->user()->name }}" hidden="">
-	                				<p class="text-dark font-weight-bold" style="font-size: 12px; margin-top: -5px;">Kode pengguna, {{ auth()->user()->kd_pengguna }}</p>
+	                				<p class="text-dark font-weight-bold" style="font-size: 12px; margin-top: -5px;">{{ __('Kode Pengguna') }}, {{ auth()->user()->kd_pengguna }}</p>
 	                				@if(auth()->user()->id_outlet != 0)
 	                				<p class="text-dark font-weight-bold" style="font-size: 12px; margin-top: -15px;">Outlet, {{ auth()->user()->kd_pengguna }}</p>
 	                				@endif
@@ -139,9 +139,9 @@
 							  <thead class="text-center">
 							    <tr>
 									<th scope="col">No</th>
-									<th scope="col">Outlet</th>
+									<th scope="col">{{ __('Posisi') }}</th>
 									<th scope="col">Kd Invoice</th>
-									<th scope="col">Pelanggan</th>
+									<th scope="col">{{ __('Pelanggan') }}</th>
 									<th scope="col">Tgl Pemberian</th>
 									<th scope="col">Ket Bayar</th>
 									<th scope="col">Status</th>

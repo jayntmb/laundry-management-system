@@ -81,9 +81,9 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Layanan Laundry</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('/kelola_pelanggan') }}">Kelola Pelanggan</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/layanan_member/' . $id) }}">Layanan Member</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Layanan Laundry') }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('/kelola_pelanggan') }}">Gestion des clients</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/layanan_member/' . $id) }}">Services aux membres</a></li>
         </ol>
     </div>
 </div>
@@ -117,13 +117,13 @@
             			<div class="col-md-4 identitas-pelanggan">
             				<table style="width: 100%; margin-left: -20px;" class="text-left table-identitas">
             					<tr>
-            						<th>Jenis Kelamin</th>
+            						<th>{{ __('Jenis Kelamin') }}</th>
             						<td>:</td>
             						<td>
             							@if($pelanggans->jk_pelanggan == 'L')
-            							Laki-laki
+            							{{ __('Laki-laki') }}
             							@else
-            							Perempuan
+            							{{ __('Perempuan') }}
             							@endif
             						</td>
             					</tr>
@@ -138,7 +138,7 @@
             						<td>{{ $pelanggans->email_pelanggan }}</td>
             					</tr>
             					<tr>
-            						<th>Alamat</th>
+            						<th>Adresse</th>
             						<td>:</td>
             						<td></td>
             					</tr>

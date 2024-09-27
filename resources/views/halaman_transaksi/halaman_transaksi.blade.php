@@ -63,7 +63,7 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Layanan Laundry</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Layanan Laundry') }}</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/kelola_transaksi') }}">Transaksi</a></li>
         </ol>
     </div>
@@ -162,7 +162,7 @@
                                                                 <td class="modal_tgl_bayar_ambil align-top"></td>
                                                             </tr>
                                                             <tr>
-                                                                <th class="align-top">Pegawai</th>
+                                                                <th class="align-top">{{ __('Pegawai') }}</th>
                                                                 <td class="align-top">:</td>
                                                                 <td class="modal_pegawai_ambil align-top"></td>
                                                             </tr>
@@ -317,12 +317,12 @@
                                                     <div class="col-md-6">
                                                         <table border="0" class="table_modal">
                                                             <tr>
-                                                                <th class="align-top">Nama</th>
+                                                                <th class="align-top">Nom</th>
                                                                 <td class="align-top">:</td>
                                                                 <td class="modal_nama_antar align-top"></td>
                                                             </tr>
                                                             <tr>
-                                                                <th class="align-top">Gender</th>
+                                                                <th class="align-top">Sexe</th>
                                                                 <td class="align-top">:</td>
                                                                 <td class="modal_jk_antar align-top"></td>
                                                             </tr>
@@ -368,7 +368,7 @@
                                                                 <td class="modal_tgl_bayar_antar align-top"></td>
                                                             </tr>
                                                             <tr>
-                                                                <th class="align-top">Pegawai</th>
+                                                                <th class="align-top">{{ __('Pegawai') }}</th>
                                                                 <td class="align-top">:</td>
                                                                 <td class="modal_pegawai_antar align-top"></td>
                                                             </tr>
@@ -496,7 +496,7 @@
                                 <div class="col-md-6">
                                     <table border="0" class="table_modal">
                                         <tr>
-                                            <th class="align-top">Kode Pelanggan</th>
+                                            <th class="align-top">Code client</th>
                                             <td class="align-top">:</td>
                                             <td class="modal_kd_pelanggan align-top"></td>
                                         </tr>
@@ -692,7 +692,7 @@
 		<div class="col-md-12">
 			<div class="row">
                 <div class="col-md-3 text-left">
-                    <h4>Daftar Pesanan</h4>
+                    <h4>Liste des commandes</h4>
                 </div>
                 <div class="col-md-9" style="margin-top: -10px;">
                     <div class="d-flex justify-content-end">
@@ -713,7 +713,7 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Nama</th>
                                     <th>Tgl Pemberian</th>
@@ -751,7 +751,7 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Nama</th>
                                     <th>Tgl Pemberian</th>
@@ -789,7 +789,7 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Nama</th>
                                     <th>Tgl Pemberian</th>
@@ -827,7 +827,7 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Nama</th>
                                     <th>Tgl Pemberian</th>
@@ -865,7 +865,7 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Nama</th>
                                     <th>Tgl Pemberian</th>
@@ -903,7 +903,7 @@
                             <thead style="text-align: center;">
                                 <tr>
                                     <th>No</th>
-                                    <th>Outlet</th>
+                                    <th>{{ __('Posisi') }}</th>
                                     <th>Kode Invoice</th>
                                     <th>Nama</th>
                                     <th>Tgl Pemberian</th>

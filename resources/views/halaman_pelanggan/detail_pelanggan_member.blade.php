@@ -45,8 +45,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Layanan Laundry</a></li>
-            <li class="breadcrumb-item"><a href="{{ url('/kelola_pelanggan') }}">Kelola Pelanggan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Layanan Laundry') }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ url('/kelola_pelanggan') }}">Gestion des clients</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/detail_pelanggan_member/' . $id) }}">Detail Pelanggan</a></li>
         </ol>
     </div>
@@ -74,7 +74,7 @@
                     					<td><input type="text" name="id_invoice_kilo" class="id_invoice_kilo"></td>
                     				</tr>
                     				<tr>
- 	                 					<th>Outlet</th>
+ 	                 					<th>{{ __('Posisi') }}</th>
                     					<td>:</td>
                     					<td class="modal_outlet"></td>
                     				</tr>
@@ -118,7 +118,7 @@
                     					<td class="modal_ket_bayar"></td>
                     				</tr>
                     				<tr>
-                    					<th>Pegawai</th>
+                    					<th>{{ __('Pegawai') }}</th>
                     					<td>:</td>
                     					<td class="modal_pegawai"></td>
                     				</tr>
@@ -166,7 +166,7 @@
                     					<td class="modal_total_paket text-success"></td>
                     				</tr>
                     				<tr class="ket_antar">
-                    					<th>Biaya Antar</th>
+                    					<th>Frais de livraison</th>
                     					<td class="modal_harga_antar"></td>
                     				</tr>
                     				<tr>
@@ -238,12 +238,12 @@
                     		<div class="col-md-6">
                     			<table border="0" class="table_modal">
                     				<tr>
-                    					<th>Diskon</th>
+                    					<th>Réduction</th>
                     					<td>:</td>
                     					<td class="modal_diskon"></td>
                     				</tr>
                     				<tr>
-                    					<th>Pajak</th>
+                    					<th>Impôts</th>
                     					<td>:</td>
                     					<td class="modal_pajak"></td>
                     				</tr>
@@ -253,12 +253,12 @@
                     					<td class="modal_ket_bayar"></td>
                     				</tr>
                     				<tr>
-                    					<th>Pegawai</th>
+                    					<th>{{ __('Pegawai') }}</th>
                     					<td>:</td>
                     					<td class="modal_pegawai"></td>
                     				</tr>
                     				<tr>
-                    					<th>Met Pembayaran</th>
+                    					<th>Paiement effectué</th>
                     					<td>:</td>
                     					<td class="modal_metode_pembayaran"></td>
                     				</tr>
@@ -268,9 +268,9 @@
                     	<div class="row mt-2 mb-2">
                     		<div class="col-md-12">
                     			<select class="form-control status-select-satu">
-                    				<option value="baru">Baru</option>
-                    				<option value="proses">Proses</option>
-                    				<option value="selesai">Selesai</option>
+                    				<option value="baru">Nouveau</option>
+                    				<option value="proses">Processus</option>
+                    				<option value="selesai">Terminer</option>
                     			</select>
                     		</div>
                     	</div>
@@ -280,12 +280,12 @@
                     			<table style="width: 100%;" class="text-center table tabel_satuan">
                     				<thead>
                     					<tr>
-	                    					<th>No</th>
-	                    					<th>Barang</th>
-	                    					<th>Keterangan</th>
-	                    					<th>Jumlah</th>
-	                    					<th>Harga</th>
-	                    					<th>Subtotal</th>
+	                    					<th>N°</th>
+	                    					<th>Objet</th>
+	                    					<th>Description</th>
+	                    					<th>Total</th>
+	                    					<th>Prix</th>
+	                    					<th>Sous-total</th>
 	                    				</tr>
                     				</thead>
                     				<tbody class="isi_paket_satu">
@@ -302,7 +302,7 @@
                     					<td class="modal_total_paket text-success"></td>
                     				</tr>
                     				<tr class="ket_antar">
-                    					<th>Biaya Antar</th>
+                    					<th>Frais de livraison</th>
                     					<td class="modal_harga_antar"></td>
                     				</tr>
                     				<tr>
@@ -345,13 +345,13 @@
                     	<div class="col-md-12">
                     		<table style="width: 100%; margin-left: -10px;" class="tabel-identitas">
                     			<tr>
-                    				<th style="padding: 5px;" class="text-dark text-left align-top">Gender</th>
+                    				<th style="padding: 5px;" class="text-dark text-left align-top">Sexe</th>
                     				<td style="padding: 5px;" class="align-top">:</td>
                     				<td style="padding: 5px;" class="align-top">
                     					@if($pelanggans->jk_pelanggan == 'L')
-                    					Laki-laki
+                    					{{ __('Laki-laki') }}
                     					@else
-                    					Perempuan
+                    					Femmes
                     					@endif
                     				</td>
                     			</tr>
@@ -366,7 +366,7 @@
                     				<td style="padding: 5px;" class="align-top">{{ $pelanggans->email_pelanggan }}</td>
                     			</tr>
                     			<tr>
-                    				<th style="padding: 5px;" class="text-dark text-left align-top">Alamat</th>
+                    				<th style="padding: 5px;" class="text-dark text-left align-top">Adresse</th>
                     				<td style="padding: 5px;" class="align-top">:</td>
                     			</tr>
                     			<tr>
@@ -381,7 +381,7 @@
                                 <span class="mb-1 text-primary"><i class="fa fa-user-o" aria-hidden="true"></i></span>
                                 <table style="width: 100%; margin: 5px;" class="text-left tabel-identitas">
                                 	<tr>
-                                		<th style="padding: 5px;" class="align-top">Username : </th>
+                                		<th style="padding: 5px;" class="align-top">{{ __('Username') }} : </th>
                                 	</tr>
                                 	<tr>
                                 		<td colspan="2" style="padding: 5px;" class="align-top">{{ $akun_pelanggans->username }}</td>
@@ -408,33 +408,33 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div class="d-flex justify-content-start">
-								<button class="btn btn-pesanan kiloan_btn btn_active">Pesanan Kiloan</button>
-								<button class="btn btn-pesanan satuan_btn ">Pesanan Satuan</button>
+								<button class="btn btn-pesanan kiloan_btn btn_active">Commande en gros</button>
+								<button class="btn btn-pesanan satuan_btn ">Commande d'unité</button>
 							</div>
 						</div>
 					</div>
 					<div class="row mt-4">
 						<div class="col-md-12 d-flex justify-content-between">
-							<h4>Daftar Pesanan</h4>
+							<h4>Liste des commandes</h4>
 							<div class="align-items-center">
 								<div class="btn-group dropleft mb-1" id="filterStatusKilo">
 	                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle font-weight-bold" style="height: 35px;" data-toggle="dropdown">Filter Status</button>
-	                                <div class="dropdown-menu"><a class="dropdown-item filter-status-kilo-btn" data-status="">Semua</a> <a class="dropdown-item filter-status-kilo-btn" data-status="baru">Baru</a> <a class="dropdown-item filter-status-kilo-btn" data-status="proses">Proses</a> <a class="dropdown-item filter-status-kilo-btn" data-status="selesai">Selesai</a> <a class="dropdown-item filter-status-kilo-btn" data-status="diantar">Diantar</a> <a class="dropdown-item filter-status-kilo-btn" data-status="diambil">Diambil</a>
+	                                <div class="dropdown-menu"><a class="dropdown-item filter-status-kilo-btn" data-status="">Tous</a> <a class="dropdown-item filter-status-kilo-btn" data-status="baru">Baru</a> <a class="dropdown-item filter-status-kilo-btn" data-status="proses">Proses</a> <a class="dropdown-item filter-status-kilo-btn" data-status="selesai">Selesai</a> <a class="dropdown-item filter-status-kilo-btn" data-status="diantar">Diantar</a> <a class="dropdown-item filter-status-kilo-btn" data-status="diambil">Diambil</a>
 	                                </div>
 	                            </div>
                                 <div class="btn-group dropleft mb-1" id="filterStatusSatu" hidden="">
                                     <button type="button" class="btn btn-primary btn-sm dropdown-toggle font-weight-bold" style="height: 35px;" data-toggle="dropdown">Filter Status</button>
-                                    <div class="dropdown-menu"><a class="dropdown-item filter-status-satu-btn" data-status="">Semua</a> <a class="dropdown-item filter-status-satu-btn" data-status="baru">Baru</a> <a class="dropdown-item filter-status-satu-btn" data-status="proses">Proses</a> <a class="dropdown-item filter-status-satu-btn" data-status="selesai">Selesai</a> <a class="dropdown-item filter-status-satu-btn" data-status="diantar">Diantar</a> <a class="dropdown-item filter-status-satu-btn" data-status="diambil">Diambil</a>
+                                    <div class="dropdown-menu"><a class="dropdown-item filter-status-satu-btn" data-status="">Tous</a> <a class="dropdown-item filter-status-satu-btn" data-status="baru">Baru</a> <a class="dropdown-item filter-status-satu-btn" data-status="proses">Proses</a> <a class="dropdown-item filter-status-satu-btn" data-status="selesai">Selesai</a> <a class="dropdown-item filter-status-satu-btn" data-status="diantar">Diantar</a> <a class="dropdown-item filter-status-satu-btn" data-status="diambil">Diambil</a>
                                     </div>
                                 </div>
 	                            <select id="maxRowsKilo" class="form-control-sm ml-2" style="width: 100px;">
-	                    			<option value="9999">Semua</option>
+	                    			<option value="9999">Tous</option>
 	                    			<option value="5">5</option>
 	                    			<option value="10">10</option>
 	                    			<option value="25">25</option>
 	                    		</select>
 	                    		<select id="maxRowsSatu" class="form-control-sm ml-2" style="width: 100px;" hidden="">
-	                    			<option value="9999">Semua</option>
+	                    			<option value="9999">Tous</option>
 	                    			<option value="5">5</option>
 	                    			<option value="10">10</option>
 	                    			<option value="25">25</option>
@@ -447,7 +447,7 @@
 							<table class="table" id="table-paket-kiloan">
 							  <thead class="text-center">
 							    <tr>
-							      <th scope="col">Outlet</th>
+							      <th scope="col">{{ __('Posisi') }}</th>
 							      <th scope="col">Kode Invoice</th>
 							      <th scope="col">Tgl Pemberian</th>
 							      <th scope="col">Tgl Selesai</th>
@@ -490,7 +490,7 @@
 							<table class="table" id="table-paket-satuan" hidden="">
 							  <thead class="text-center">
 							    <tr>
-							      <th scope="col">Outlet</th>
+							      <th scope="col">{{ __('Posisi') }}</th>
 							      <th scope="col">Kode Invoice</th>
 							      <th scope="col">Tgl Pemberian</th>
 							      <th scope="col">Tgl Selesai</th>

@@ -26,8 +26,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pengguna') }}">Kelola Pengguna</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pengguna') }}">{{ __('Kelola Pengguna') }}</a></li>
         </ol>
     </div>
 </div>
@@ -66,9 +66,9 @@
                                         <thead class="text-center">
                                             <tr>
                                                 <th>No</th>
-                                                <th>Outlet</th>
+                                                <th>{{ __('Posisi') }}</th>
                                                 <th>Kd Invoice</th>
-                                                <th>Pelanggan</th>
+                                                <th>{{ __('Pelanggan') }}</th>
                                                 <th>Tgl Pemberian</th>
                                             </tr>
                                         </thead>
@@ -93,7 +93,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
-                    	<h4 class="card-title">Daftar Pengguna</h4>
+                    	<h4 class="card-title">{{ __('Daftar Pengguna') }}</h4>
                     	<button type="button" data-count="{{ $outlets }}" class="btn font-weight-bold btn-sm mb-1 btn-primary tambah_pengguna_btn">Tambah Pengguna <span class="btn-icon-right"><i class="fa fa-plus"></i></span></button>
                     </div>
                     <div class="table-responsive">
@@ -102,9 +102,9 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
-                                    <th>Kode Pengguna</th>
-                                    <th>Posisi</th>
-                                    <th>Username</th>
+                                    <th>{{ __('Kode Pengguna') }}</th>
+                                    <th>{{ __('Posisi') }}</th>
+                                    <th>{{ __('Username') }}</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>

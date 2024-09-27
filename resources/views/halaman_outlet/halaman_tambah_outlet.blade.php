@@ -6,9 +6,9 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Kelola Data</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_outlet') }}">Kelola Outlet</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/tambah_outlet') }}">Tambah Outlet</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Kelola Data') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_outlet') }}">{{ __('Kelola Outlet') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/tambah_outlet') }}">Ajouter un point de vente</a></li>
         </ol>
     </div>
 </div>
@@ -17,7 +17,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-5">Outlet Baru</h4>
+                    <h4 class="card-title mb-5">Nouveau point de vente</h4>
                     <div class="form-validation">
                         <form class="form-valide" action="{{ url('/simpan_outlet') }}" method="post" name="outlet_baru_form">
                             @csrf
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-hotline">Hotline <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label" for="val-hotline">Téléphone <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <input type="text" class="form-control" id="val-hotline" name="hotline" placeholder="Masukkan hotline">
@@ -43,14 +43,14 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label">Alamat <span class="text-danger">*</span>
+                                <label class="col-lg-4 col-form-label">Adresse <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
                                     <textarea class="form-control h-150px" rows="6" id="comment" placeholder="Masukkan alamat outlet" name="alamat"></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label" for="val-password">Sematkan Peta (Iframe - HTML)
+                                <label class="col-lg-4 col-form-label" for="val-password">Intégrer une carte (Iframe - HTML)
                                 </label>
                                 <div class="col-lg-6">
                                     <div class="input-group">

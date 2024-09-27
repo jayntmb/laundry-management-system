@@ -57,8 +57,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Layanan Laundry</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/registrasi_pelanggan') }}">Registrasi Pelanggan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Layanan Laundry') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/registrasi_pelanggan') }}">Enregistrement des clients</a></li>
         </ol>
     </div>
 </div>
@@ -71,13 +71,13 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title mb-4">Registrasi Pelanggan</h4>
+                    <h4 class="card-title mb-4">Enregistrement des clients</h4>
                     <ul class="nav nav-pills mb-3" style="border-bottom: 1px solid #7571f9;">
-                        <li class="nav-item"><a href="#" class="identitas-tab nav-link active">Data Diri</a>
+                        <li class="nav-item"><a href="#" class="identitas-tab nav-link active">Données personnelles</a>
                         </li>
                         <li class="nav-item" hidden="hidden"><a href="#slide-1" class="nav-link active slide-1-btn" data-toggle="tab" aria-expanded="false"></a>
                         </li>
-                        <li class="nav-item"><a href="#" class="layanan-tab nav-link">Layanan Laundry</a>
+                        <li class="nav-item"><a href="#" class="layanan-tab nav-link">{{ __('Layanan Laundry') }}</a>
                         </li>
                         <li class="nav-item" hidden="hidden"><a href="#slide-2" class="nav-link slide-2-btn" data-toggle="tab" aria-expanded="false"></a>
                         </li>
@@ -266,8 +266,8 @@
                             <div id="slide-1" class="tab-pane active identitas-tab">
                                 <div class="row align-items-center">
                                     <div class="col-lg-12">
-                                        <div class="alert alert-info">Layanan pelanggan member tersedia pada halaman <a href="{{ url('/kelola_pelanggan') }}" class="alert-link">Kelola Pelanggan</a></div>
-                                        <h4 class="mt-3 mb-3">Lengkapi Data Diri</h4>
+                                        <div class="alert alert-info">Le service clientèle des membres est disponible sur le site <a href="{{ url('/kelola_pelanggan') }}" class="alert-link">Gestion des clients</a></div>
+                                        <h4 class="mt-3 mb-3">Données personnelles complètes</h4>
                                         <hr>
                                         <div class="row">
                                             <div class="col-lg-6">
@@ -300,11 +300,11 @@
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <div style="margin-bottom: -10px;"><p class="font-weight-bold text-dark">Jenis Kelamin : </p></div>
+                                                            <div style="margin-bottom: -10px;"><p class="font-weight-bold text-dark"> KelaminJenis : </p></div>
                                                             <label class="radio-inline mr-3">
-                                                                <input type="radio" name="jk_pelanggan" value="L"> Laki-laki</label>
+                                                                <input type="radio" name="jk_pelanggan" value="L"> Homme</label>
                                                             <label class="radio-inline">
-                                                                <input type="radio" name="jk_pelanggan" value="P"> Perempuan</label>
+                                                                <input type="radio" name="jk_pelanggan" value="P"> Femme</label>
                                                         </div>
                                                         <div class="jk_pelanggan_error" style="margin-top: -20px;"></div>
                                                     </div>
@@ -373,7 +373,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h4 class="mt-3 mb-3">Metode Pembayaran</h4>
+                                                <h4 class="mt-3 mb-3">Mode de paiement</h4>
                                                 <hr>
                                                 <div class="input-group">
                                                     <select class="form-control" id="metode_pembayaran_kilo" name="metode_pembayaran_kilo" disabled="">
@@ -432,13 +432,13 @@
                                                 <span style='color: red;'>Silakan pilih barang terlebih dahulu</span>
                                             </div>
                                             <div class="col-lg-12 mt-3">
-                                                <h4 class="mt-3 mb-3">Metode Pembayaran</h4>
+                                                <h4 class="mt-3 mb-3">Mode de paiement</h4>
                                                 <hr>
                                                 <div class="input-group">
                                                     <select class="form-control" id="metode_pembayaran_satu" name="metode_pembayaran_satu" disabled="">
-                                                        <option value="" class="metode_pembayaran_satu_1">-- Pilih Metode Pembayaran --</option>
-                                                        <option value="outlet" class="metode_pembayaran_satu_2">Bayar di outlet</option>
-                                                        <option value="rumah" class="metode_pembayaran_satu_3" data-antar="">Bayar di rumah</option>
+                                                        <option value="" class="metode_pembayaran_satu_1">-- Sélectionner le mode de paiement --</option>
+                                                        <option value="outlet" class="metode_pembayaran_satu_2">Payer à la caisse</option>
+                                                        <option value="rumah" class="metode_pembayaran_satu_3" data-antar="">Payez à domicile</option>
                                                     </select>
                                                 </div>
                                                 <div class="metode_pembayaran_satu_error"></div>
@@ -446,7 +446,7 @@
                                             <div class="col-lg-12 mt-3 jasa_antar_checkbox_satuan" hidden="">
                                                 <div class="form-check">
                                                     <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input" name="jasa_antar_checkbox_satuan">Jasa Antar</label>
+                                                        <input type="checkbox" class="form-check-input" name="jasa_antar_checkbox_satuan">Service de livraison</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -454,7 +454,7 @@
                                             <div class="col-lg-3 offset-lg-9">
                                                 <div class="basic-list-group">
                                                     <ul class="list-group">
-                                                        <li class="list-group-item active font-weight-bold">Check Out</li>
+                                                        <li class="list-group-item active font-weight-bold">Sortir</li>
                                                         <li class="list-group-item">
                                                             <div class="d-flex justify-content-between">
                                                                 <div class="nama_barang_satuan"></div>
@@ -481,18 +481,18 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12 d-flex justify-content-between">
-                                        <button class="btn btn-primary prev-slide-2" type="button">Kembali</button>
-                                        <button class="btn btn-primary next-slide-2" type="button">Lanjut</button>
+                                        <button class="btn btn-primary prev-slide-2" type="button">Retour</button>
+                                        <button class="btn btn-primary next-slide-2" type="button">Continuer</button>
                                     </div>
                                 </div>
                             </div>
                             <div id="slide-3" class="tab-pane akun-tab">
                                 <div class="row align-items-center">
                                     <div class="col-lg-12">
-                                        <h4 class="mt-3 mb-3">Buat Akun Anda</h4>
+                                        <h4 class="mt-3 mb-3">Créez un compte</h4>
                                         <hr>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-username">Username <span class="text-danger">*</span>
+                                            <label class="col-lg-4 col-form-label" for="val-username">{{ __('Username') }} <span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
                                                 <input type="text" class="form-control" id="val-username" name="username" placeholder="Masukkan username">

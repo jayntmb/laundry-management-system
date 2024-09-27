@@ -43,8 +43,8 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Layanan Laundry</a></li>
-            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pelanggan') }}">Kelola Pelanggan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Layanan Laundry') }}</a></li>
+            <li class="breadcrumb-item active"><a href="{{ url('/kelola_pelanggan') }}">Gestion des clients</a></li>
         </ol>
     </div>
 </div>
@@ -59,7 +59,7 @@
 	</div>
 	<div class="row m-4">
 		<div class="col-md-12 text-left">
-			<h4>Daftar Pelanggan</h4>
+			<h4>Liste des clients</h4>
 		</div>
 	</div>
     <div class="row" style="margin-top: -15px;">
@@ -70,12 +70,12 @@
                         <table class="table table-striped table-bordered zero-configuration">
                             <thead style="text-align: center;">
                                 <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Kode Pelanggan</th>
-                                    <th>Jenis Kelamin</th>
+                                    <th>N°</th>
+                                    <th>Nom</th>
+                                    <th>Code client</th>
+                                    <th>{{ __('Jenis Kelamin') }}</th>
                                     <th>No HP</th>
-                                    <th>Aksi</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -93,9 +93,9 @@
                             		<td>{{ $pelanggan->kd_pelanggan }}</td>
                             		<td>
                             			@if($pelanggan->jk_pelanggan == 'L')
-                            			Laki-laki
+                            			{{ __('Laki-laki') }}
                             			@else
-                            			Perempuan
+                            			{{ __('Perempuan') }}
                             			@endif
                             		</td>
                             		<td>{{ $pelanggan->no_hp_pelanggan }}</td>
@@ -112,12 +112,12 @@
                         <table class="table table-striped table-bordered zero-configuration">
                             <thead style="text-align: center;">
                                 <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Kode Pelanggan</th>
-                                    <th>Jenis Kelamin</th>
-                                    <th>No HP</th>
-                                    <th>Aksi</th>
+                                    <th>N°</th>
+                                    <th>Nom</th>
+                                    <th>Code client</th>
+                                    <th>Sexe</th>
+                                    <th>N° HP</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -135,9 +135,9 @@
                             		<td>{{ $pelanggan->kd_pelanggan }}</td>
                             		<td>
                             			@if($pelanggan->jk_pelanggan == 'L')
-                            			Laki-laki
+                            			{{ __('Laki-laki') }}
                             			@else
-                            			Perempuan
+                            			{{ __('Perempuan') }}
                             			@endif
                             		</td>
                             		<td>{{ $pelanggan->no_hp_pelanggan }}</td>

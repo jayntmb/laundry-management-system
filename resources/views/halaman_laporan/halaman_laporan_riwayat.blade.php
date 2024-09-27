@@ -36,7 +36,7 @@
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Laporan</a></li>
+            <li class="breadcrumb-item"><a href="#">{{ __('Laporan') }}</a></li>
             <li class="breadcrumb-item"><a href="{{ url('/laporan_pegawai') }}">Laporan Pegawai</a></li>
             <li class="breadcrumb-item active"><a href="{{ url('/laporan_pegawai_riwayat/' . $id) }}">Riwayat Kerja Pegawai</a></li>
         </ol>
@@ -56,12 +56,12 @@
 	            		<div class="col-md-12">
 	            			<table style="width: 100%;" class="identitas-table">
 	            				<tr>
-	            					<th class="align-top">Nama</th>
+	            					<th class="align-top">{{ __('Nama') }}</th>
 	            					<td class="align-top">:</td>
 	            					<td class="align-top">{{ $users->name }}</td>
 	            				</tr>
 	            				<tr>
-	            					<th class="align-top">Posisi</th>
+	            					<th class="align-top">{{ __('Posisi') }}</th>
 	            					<td class="align-top">:</td>
 	            					<td class="align-top">{{ $users->role }}</td>
 	            				</tr>
@@ -130,7 +130,7 @@
 		                                	<th>No</th>
 		                                    <th>Outlet</th>
 		                                    <th>Kd Invoice</th>
-		                                    <th>Pelanggan</th>
+		                                    <th>{{ __('Pelanggan') }}</th>
 		                                    <th>Tgl Pemberian</th>
 		                                    <th>Ket Bayar</th>
 		                                    <th>Status</th>

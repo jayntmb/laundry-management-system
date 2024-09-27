@@ -1,0 +1,74 @@
+{
+    "Dashboard" : "Tableau de bord",
+    "Kelola Data" : "Gestion des données",
+    "Edit Pengguna" : "Modifier les informations de l'utilisateur",
+    "Kode Pengguna" : "Code de l'utilisateur",
+    "Nama" : "Nom",
+    "Aksi" : "Action",
+    "Username" : "Pseudo",
+    "Posisi" : "Rôle",
+    "Outlet" : "Sortie",
+    "Foto" : "Photo",
+    "Berhasil !" : "Succès!",
+    "Pengguna berhasil diubah" : "Changement d'utilisateur réussi",
+    "Daftar Pengguna" : "Liste des utilisateurs",
+    "Daftar Outlet" : "Liste des points de vente",
+    "Kelola Paket" : "Gestion des paquets",
+    "Kelola Outlet" : "Gestion des points de vente",
+    "Kelola Pengguna" : "Gestion des utilisateurs",
+    "Daftar Paket Kiloan" : "Liste des colis de Kiloan",
+    "Layanan Laundry" : "Service de blanchisserie",
+    "Laporan" : "Rapport",
+    "Pegawai" : "Employé",
+    "Pesanan Selesai" : "Commande terminée", 
+    "Pelanggan" : "Client",
+    "Cabang Outlet" : "Branche de sortie",
+    "Pengunjung Outlet" : "Branche de sortie",
+    "Jumlah Pegawai" : "Nombre de salariés",
+    "Jumlah Selesai" : "Commandes terminées",
+    "Jumlah Outlet" : "Nombre de prises",
+    "Jumlah Pelanggan" : "Nombre de clients",
+    "Total Pemasukan" : "Revenu total",
+    "Total Pemasukan Sejak Awal" : "Revenu total depuis la création", 
+    "Layanan pelanggan member tersedia pada halaman Kelola Pelanggan" : "Le service clientèle des membres est disponible sur la page Gérer les clients.",
+    "Email tidak boleh kosong" : "Le champ email ne doit pas être vide",
+    "Jenis Kelamin" : "Sexe",
+    "Data Diri" : "Données personnelles",
+    "Buat Akun" : "Créer un compte",
+    "Laki-laki" : "Homme",
+    "Perempuan" : "Femme",
+    "PereRegistrasi Pelangganmpuan" : "Enregistrement des clients",
+    "Alamat" : "Adresse",
+    "Keluar" : "Déconnexion",
+    "Selamat Datang" : "Bienvenue",
+    "Masuk" : "Se connecter",
+    "Peringatan !" : "Attention !",
+    "Silakan buat outlet terlebih dahulu" : "Veuillez d'abord créer une prise",
+    "Hotline" : "Téléphone",
+    "Name Outlet" : "Nom de l'établissement",
+    "Tambah Outlet" : "Ajouter un point de vente",
+    "Ubah Password" : "Modifier le mot de passe",
+    "Riwayat Kerja" : "Antécédents professionnels",
+    "Tgl Pemberian" : "Date d'attribution",
+    "Ket Bayar" : "Rémunération Ket",
+    "Password baru" : "Mot de passe oublié",
+    "Laporan Pegawai" : "Rapport des employés",
+    "Laporan Transaksi" : "Rapport d'opération",
+    "WAKTU" : "TEMPS"
+    
+
+
+
+
+    
+    
+
+    
+   
+
+
+    
+
+
+
+}
